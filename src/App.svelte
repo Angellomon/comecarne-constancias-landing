@@ -1,16 +1,10 @@
 <script>
-  import Header from "./lib/Header.svelte";
-  import BodySeleccion from "./lib/BodySeleccion.svelte";
+  import PagePrincipal from "./pages/principal/Page.svelte";
 </script>
 
 <main>
-  <Header />
-  <BodySeleccion />
+  <PagePrincipal />
 </main>
 
 <style>
-  main {
-    display: flex;
-    flex-direction: column;
-  }
 </style>
