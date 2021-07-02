@@ -11,4 +11,4 @@ Desarrollo ehcho para el [Consejo Mexicano de la Carne](https://comecarne.org/),
 - [ViteJS](https://vitejs.dev)
 - [Svelte](https://svelte.dev)
 
-Diseño hecho por [Dana](dana@umbrellacompany.mx) :woman_cartwheeling:
+Diseño hecho por [Dana](mailto:dana@umbrellacompany.mx) :woman_cartwheeling:
