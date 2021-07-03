@@ -1,9 +1,10 @@
 <script>
-  import PagePrincipal from "./pages/principal/Page.svelte";
+  import { Router } from "svelte-router-spa";
+  import { routes } from "./routes";
 </script>
 
 <main>
-  <PagePrincipal />
+  <Router {routes} />
 </main>
 
 <style>
