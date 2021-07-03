@@ -8,16 +8,17 @@
 
 <style>
   button {
-    background-color: #dfa351;
-    margin: 0 0.5em;
+    background-color: #e39943;
+    margin: 0.5em 0.5em;
     border-radius: 5px;
     border: none;
-    padding: 0.5em 2em;
+    padding: 0.5em 5em;
     color: white;
-    font-weight: bold;
+    font-family: "Futura Condensed Extra Bold";
+    font-size: 15px;
   }
   button:hover {
-    background-color: #d99330;
+    background-color: #d58020;
     cursor: pointer;
   }
 </style>

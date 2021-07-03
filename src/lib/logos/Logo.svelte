@@ -4,3 +4,10 @@
 </script>
 
 <img {src} {alt} />
+
+<style>
+  img {
+    height: 5.5em;
+    max-height: 90%;
+  }
+</style>
