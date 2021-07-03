@@ -3,7 +3,7 @@
 </script>
 
 <section>
-  <h1>Indica a qué edición asististe:</h1>
+  <h1><strong>Indica</strong> a qué <strong>edición</strong> asististe:</h1>
   <BotonesSeleccion />
 </section>
 
@@ -17,5 +17,9 @@
   h1 {
     text-align: center;
     font-size: 25px;
+    color: white;
+  }
+  strong {
+    font-weight: bolder;
   }
 </style>
