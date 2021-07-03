@@ -14,18 +14,38 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #dfa351;
+    background-color: #e39943;
     width: 100%;
     height: 30vh;
   }
   h1 {
     font-size: 60px;
     text-align: center;
+    font-family: "Futura Condensed Extra Bold";
   }
   .logo-seminario {
     max-height: 90%;
   }
   .cargamento {
     max-height: 100%;
+  }
+
+  @media (max-width: 895px) {
+    section {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .logo-seminario {
+      max-height: 15em;
+    }
+    h1 {
+      font-size: 30px;
+      text-align: center;
+      order: -1;
+    }
+    .cargamento {
+      max-height: 15em;
+    }
   }
 </style>
