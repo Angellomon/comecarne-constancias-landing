@@ -7,7 +7,7 @@
 
 <style>
   img {
-    height: 6em;
+    height: 5.5em;
     max-height: 90%;
   }
 </style>
