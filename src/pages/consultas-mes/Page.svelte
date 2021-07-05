@@ -4,10 +4,7 @@
   import Contenido from "../../lib/Contenido.svelte";
   import Footer from "../../lib/Footer.svelte";
 
-  export let params;
-
   export let currentRoute;
-  console.log(currentRoute, params);
 </script>
 
 <div>

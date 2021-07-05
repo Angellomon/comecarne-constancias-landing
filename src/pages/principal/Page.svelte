@@ -3,9 +3,6 @@
   import Body from "./Body.svelte";
   import Footer from "../../lib/Footer.svelte";
   import Contenido from "../../lib/Contenido.svelte";
-
-  export let currentRoute;
-  console.log(currentRoute);
 </script>
 
 <section>
