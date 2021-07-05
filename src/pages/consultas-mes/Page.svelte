@@ -14,3 +14,9 @@
     <Footer />
   </Contenido>
 </div>
+
+<style>
+  div {
+    height: 100%;
+  }
+</style>

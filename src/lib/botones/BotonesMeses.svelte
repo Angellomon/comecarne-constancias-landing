@@ -4,9 +4,9 @@
 
 <div class="botones-seleccion">
   <Boton path="consulta/junio">JUNIO</Boton>
-  <Boton path="consulta/julio">JULIO</Boton>
-  <Boton path="consulta/agosto">AGOSTO</Boton>
-  <Boton path="consulta/septiembre">SEPTIEMBRE</Boton>
+  <Boton path="consulta/julio" disabled={true}>JULIO</Boton>
+  <Boton path="consulta/agosto" disabled>AGOSTO</Boton>
+  <Boton path="consulta/septiembre" disabled>SEPTIEMBRE</Boton>
 </div>
 
 <style>

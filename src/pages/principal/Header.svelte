@@ -5,7 +5,7 @@
 
 <section>
   <img class="logo-seminario" src={logoSeminario} alt="logo-seminario" />
-  <h1>Constancias</h1>
+  <h1>CONSTANCIAS</h1>
   <img class="cargamento" src={cargamento} alt="cargamento" />
 </section>
 
@@ -19,7 +19,7 @@
     height: 30vh;
   }
   h1 {
-    font-size: 60px;
+    font-size: 85px;
     text-align: center;
     font-family: "Futura Condensed Extra Bold";
   }
@@ -40,7 +40,7 @@
       max-height: 15em;
     }
     h1 {
-      font-size: 30px;
+      font-size: 50px;
       text-align: center;
       order: -1;
     }

@@ -1,10 +1,11 @@
 <script>
   import { Navigate } from "svelte-router-spa";
   export let path;
+  export const disabled = false;
 </script>
 
 <Navigate to={path}>
-  <button><slot /></button>
+  <button disabled={true}><slot /></button>
 </Navigate>
 
 <style>
@@ -17,10 +18,10 @@
     margin: 0.5em 0.5em;
     border-radius: 5px;
     border: none;
-    padding: 0.5em 5em;
+    padding: 0.3em 5em;
     color: white;
     font-family: "Futura Condensed Extra Bold";
-    font-size: 15px;
+    font-size: 1.1em;
     cursor: pointer;
   }
 </style>

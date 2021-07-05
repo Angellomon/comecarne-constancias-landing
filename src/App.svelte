@@ -16,4 +16,8 @@
     font-family: "Futura Condensed Medium";
     src: url("/fonts/futura-condensed-medium.otf");
   }
+  main {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
 </style>
