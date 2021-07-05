@@ -1,6 +1,8 @@
 <script>
   import Body from "./Body.svelte";
   import Header from "./Header.svelte";
+  import Contenido from "../../lib/Contenido.svelte";
+  import Footer from "../../lib/Footer.svelte";
 
   export let params;
 
@@ -10,5 +12,8 @@
 
 <div>
   <Header mes={currentRoute.namedParams.mes} />
-  <Body />
+  <Contenido>
+    <Body />
+    <Footer />
+  </Contenido>
 </div>
