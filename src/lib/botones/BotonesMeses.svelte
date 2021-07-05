@@ -3,10 +3,10 @@
 </script>
 
 <div class="botones-seleccion">
-  <Boton path="/junio">JUNIO</Boton>
-  <Boton path="/julio">JULIO</Boton>
-  <Boton path="/agosto">AGOSTO</Boton>
-  <Boton path="/septiembre">SEPTIEMBRE</Boton>
+  <Boton path="consulta/junio">JUNIO</Boton>
+  <Boton path="consulta/julio">JULIO</Boton>
+  <Boton path="consulta/agosto">AGOSTO</Boton>
+  <Boton path="consulta/septiembre">SEPTIEMBRE</Boton>
 </div>
 
 <style>
