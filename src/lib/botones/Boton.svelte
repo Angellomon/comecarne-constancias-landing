@@ -17,7 +17,7 @@
     cursor: pointer;
   }
   button {
-    background-color: #e39943;
+    background-color: #f3a944;
     margin: 0.5em 0.5em;
     border-radius: 5px;
     border: none;
