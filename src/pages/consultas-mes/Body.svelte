@@ -1,10 +1,24 @@
 <script>
   import EmailInput from "../../lib/EmailInput.svelte";
+  import { consultaEmail } from "../../lib/consultas";
+  import { email } from "../../lib/stores";
+  import { validateEmail } from "../../lib/validaciones";
+
+  let isError = false;
+
+  const realizarConsulta = async () => {
+    isError = !validateEmail($email);
+    if (isError) return;
+    await consultaEmail();
+  };
 </script>
 
 <section>
   <h3>Correo Electrónico</h3>
-  <EmailInput />
+  <EmailInput on:submit={realizarConsulta} />
+  {#if isError}
+    <span class="error">Correo no válido</span>
+  {/if}
   <span
     ><b>Ingresa</b> el <b>correo electrónico</b> con el que te
     <b>registraste</b> al <b>Seminario Interactivo</b> de Aduanas
@@ -13,6 +27,12 @@
 </section>
 
 <style>
+  .error {
+    color: red;
+    text-align: center;
+    margin-top: -1em;
+    margin-bottom: 1em;
+  }
   h3 {
     font-family: "Futura Condensed Extra Bold";
     color: white;
