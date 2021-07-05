@@ -7,7 +7,7 @@ const routes = [
     component: PageSeleccion,
   },
   {
-    name: "/:mes",
+    name: "/consulta/:mes",
     component: PageMes,
   },
 ];

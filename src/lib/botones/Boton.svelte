@@ -1,15 +1,11 @@
 <script>
-  import { Navigate, navigateTo } from "svelte-router-spa";
+  import { Navigate } from "svelte-router-spa";
   export let path;
-
-  function gotoPage() {
-    navigateTo(path);
-  }
 </script>
 
-<button on:click={() => gotoPage()}>
-  <slot />
-</button>
+<Navigate to={path}>
+  <button><slot /></button>
+</Navigate>
 
 <style>
   button:hover {

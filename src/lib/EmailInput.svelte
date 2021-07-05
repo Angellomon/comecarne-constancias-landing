@@ -3,18 +3,22 @@
 
   import { createEventDispatcher } from "svelte";
   import Icon from "fa-svelte";
+  import { email, isLoading } from "../lib/stores";
   import { faAngleRight, faSpinner } from "@fortawesome/free-solid-svg-icons";
 
-  const distatch = createEventDispatcher();
-  export let loading = false;
-  export let value;
-  const submit = () => distatch("submit");
+  const dispatch = createEventDispatcher();
+  let value;
+
+  const submit = () => {
+    email.update(() => value);
+    dispatch("submit");
+  };
 </script>
 
 <span>
   <input placeholder="correo@ejemplo.com" bind:value type="email" />
-  <button onclick={submit}>
-    {#if loading}
+  <button on:click={submit}>
+    {#if $isLoading}
       <Icon class="loading" icon={faSpinner} />
     {:else}
       <Icon icon={faAngleRight} />
