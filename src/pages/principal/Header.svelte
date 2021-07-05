@@ -14,7 +14,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #e39943;
+    background-color: #f3a944;
     width: 100%;
     height: 30vh;
   }

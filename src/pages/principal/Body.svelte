@@ -1,5 +1,4 @@
 <script>
-  import { space } from "svelte/internal";
   import BotonesSeleccion from "../../lib/botones/BotonesMeses.svelte";
 </script>
 
@@ -14,7 +13,8 @@
 <style>
   section {
     background-color: #0d070b;
-    height: 50vh;
+    height: 100%;
+    min-height: 57vh;
     display: flex;
     flex-direction: column;
   }

@@ -1,14 +1,23 @@
 <script>
-  export let titulo;
+  import { Navigate, navigateTo } from "svelte-router-spa";
+  export let path;
+
+  function gotoPage() {
+    navigateTo(path);
+  }
 </script>
 
-<button>
-  {titulo}
+<button on:click={() => gotoPage()}>
+  <slot />
 </button>
 
 <style>
+  button:hover {
+    background-color: #d58020;
+    cursor: pointer;
+  }
   button {
-    background-color: #e39943;
+    background-color: #f3a944;
     margin: 0.5em 0.5em;
     border-radius: 5px;
     border: none;
@@ -16,9 +25,6 @@
     color: white;
     font-family: "Futura Condensed Extra Bold";
     font-size: 15px;
-  }
-  button:hover {
-    background-color: #d58020;
     cursor: pointer;
   }
 </style>
