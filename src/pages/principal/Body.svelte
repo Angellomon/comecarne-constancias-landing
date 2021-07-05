@@ -20,9 +20,10 @@
   }
   h1 {
     text-align: center;
-    font-size: 2.3rem;
+    font-size: 2.8rem;
     color: white;
     font-family: "Futura Condensed Medium";
+    margin-bottom: 0.7em;
   }
   .enfasis {
     font-family: "Futura Condensed Extra Bold";

@@ -16,12 +16,21 @@
 </script>
 
 <span>
-  <input placeholder="correo@ejemplo.com" bind:value type="email" />
+  <input
+    on:keydown={(value) => {
+      console.log();
+
+      if ((value.keyCode || value.which) == 13) submit();
+    }}
+    placeholder="correo@ejemplo.com"
+    bind:value
+    type="email"
+  />
   <button on:click={submit}>
     {#if $isLoading}
       <Icon class="loading" icon={faSpinner} />
     {:else}
-      <Icon icon={faAngleRight} />
+      <Icon lcass="submit" icon={faAngleRight} />
     {/if}
   </button>
 </span>
@@ -30,6 +39,8 @@
   span {
     display: flex;
     justify-content: center;
+    z-index: 99;
+    margin-bottom: 1em;
   }
   input {
     background-color: #f3a944;
@@ -40,9 +51,8 @@
     font-family: "Futura Condensed Medium";
     font-weight: bold;
     font-size: 25px;
-    text-align: right;
-    margin: 0 0 1em 1em;
-    padding-right: 50px;
+    text-align: center;
+    min-width: 3.3em;
   }
   button {
     cursor: pointer;
@@ -50,7 +60,6 @@
     background-color: #f3a944;
     margin-top: 0;
     margin-right: 1em;
-    margin-bottom: 1em;
     border: none;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
@@ -66,6 +75,9 @@
     animation-duration: 2000ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+  }
+  button :global(.submit) {
+    margin-top: 1em;
   }
   @keyframes spin {
     from {
