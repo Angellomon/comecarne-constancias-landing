@@ -3,10 +3,10 @@
 </script>
 
 <div class="botones-seleccion">
-  <Boton path="consulta/junio">JUNIO</Boton>
+  <Boton path="consulta/junio" disabled={false}>JUNIO</Boton>
+  <Boton path="consulta/agosto" disabled={true}>AGOSTO</Boton>
   <Boton path="consulta/julio" disabled={true}>JULIO</Boton>
-  <Boton path="consulta/agosto" disabled>AGOSTO</Boton>
-  <Boton path="consulta/septiembre" disabled>SEPTIEMBRE</Boton>
+  <Boton path="consulta/septiembre" disabled={true}>SEPTIEMBRE</Boton>
 </div>
 
 <style>

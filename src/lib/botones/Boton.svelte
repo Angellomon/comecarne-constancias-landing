@@ -1,12 +1,16 @@
 <script>
   import { Navigate } from "svelte-router-spa";
   export let path;
-  export const disabled = false;
+  export let disabled = false;
 </script>
 
-<Navigate to={path}>
-  <button disabled={true}><slot /></button>
-</Navigate>
+{#if !disabled}
+  <Navigate to={path}>
+    <button><slot /></button>
+  </Navigate>
+{:else}
+  <button style="cursor: not-allowed;" disabled={true}><slot /></button>
+{/if}
 
 <style>
   button:hover {
