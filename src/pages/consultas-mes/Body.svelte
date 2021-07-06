@@ -47,12 +47,14 @@
   }
   p {
     margin: 0;
-    min-width: 100%;
+    width: 100%;
+    margin: 0;
+    height: 2.9em;
   }
   section {
     display: flex;
     flex-direction: column;
-    margin: 0 33% 12em 33%;
+    margin: 0 35% 12em 35%;
     color: white;
     font-family: "Futura Condensed Medium";
     font-size: 1.2em;
@@ -66,13 +68,12 @@
   .top {
     font-size: 1.1em;
     text-align: justify;
-    margin: 0;
   }
   .bottom {
     font-size: 1.3em;
     text-align: justify;
-    margin: 0;
   }
+
   @media (max-width: 895px) {
     section {
       margin: 0 15vw 12em 15vw;
@@ -80,21 +81,50 @@
     h3 {
       font-family: "Futura Condensed Extra Bold";
       color: white;
-      text-align: left;
+      text-align: center;
     }
-  }
-  @media (min-width: 1387px) {
     p {
       margin: 0;
-      min-width: 100%;
+      width: 100%;
+      margin: 0;
       height: 1.2em;
-      min-height: 7vh;
+      text-align: justify;
     }
     p:after {
       content: "";
       display: inline-block;
       width: 100%;
       margin: 0;
+    }
+  }
+  @media (min-width: 1566px) {
+    p {
+      height: 1.2em;
+    }
+    p:after {
+      content: "";
+      display: inline-block;
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+  @media (max-width: 689px) {
+    p {
+      margin: 0;
+      width: 100%;
+      margin: 0;
+      height: 3em;
+      text-align: left;
+    }
+  }
+  @media (max-width: 405px) {
+    p {
+      margin: 0;
+      width: 100%;
+      margin: 0;
+      height: 4em;
+      text-align: left;
     }
   }
 </style>

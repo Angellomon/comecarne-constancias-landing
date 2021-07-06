@@ -87,4 +87,12 @@
       transform: rotate(360deg);
     }
   }
+  @media (max-width: 650px) {
+    span {
+      width: 70vw;
+    }
+    input {
+      width: 70vw;
+    }
+  }
 </style>
