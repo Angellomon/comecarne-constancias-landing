@@ -41,6 +41,8 @@
     justify-content: center;
     z-index: 99;
     margin-bottom: 1em;
+    margin-left: 3vw;
+    margin-right: 3vw;
   }
   input {
     background-color: #f3a944;
@@ -53,6 +55,7 @@
     font-size: 25px;
     text-align: center;
     min-width: 3.3em;
+    width: 100%;
   }
   button {
     cursor: pointer;

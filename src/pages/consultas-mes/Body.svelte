@@ -49,12 +49,19 @@
     margin: 0;
     width: 100%;
     margin: 0;
-    height: 2.9em;
+    height: 1.2em;
+    text-align: justify;
+  }
+  p:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    margin: 0;
   }
   section {
     display: flex;
     flex-direction: column;
-    margin: 0 35% 12em 35%;
+    margin: 0 25vw 12em 25vw;
     color: white;
     font-family: "Futura Condensed Medium";
     font-size: 1.2em;
@@ -74,7 +81,7 @@
     text-align: justify;
   }
 
-  @media (max-width: 895px) {
+  @media (max-width: 968px) {
     section {
       margin: 0 15vw 12em 15vw;
     }
@@ -106,6 +113,9 @@
       display: inline-block;
       width: 100%;
       margin: 0;
+    }
+    section {
+      margin: 0 35% 12em 35%;
     }
   }
 
