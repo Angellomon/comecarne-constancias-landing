@@ -58,7 +58,7 @@
     color: white;
     font-family: "Futura Condensed Medium";
     font-size: 1.2em;
-    height: 100%;
+    min-height: 30vh;
   }
   b {
     font-family: "Futura Condensed Extra Bold";
