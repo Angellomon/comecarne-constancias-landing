@@ -9,7 +9,7 @@
   const realizarConsulta = async () => {
     isError = !validateEmail($email);
     if (isError) return;
-    await consultaEmail();
+    await consultaEmail($email);
   };
 </script>
 
