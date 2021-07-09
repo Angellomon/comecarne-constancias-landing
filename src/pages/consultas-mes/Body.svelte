@@ -48,7 +48,7 @@
     width: 100%;
     margin: 0;
     height: 1.2em;
-    text-align: left;
+    text-align: center;
   }
   p:after {
     content: "";
