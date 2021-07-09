@@ -3,10 +3,7 @@
 </script>
 
 <section>
-  <h1>
-    <span class="enfasis">Indica</span> a qué
-    <span class="enfasis">edición</span> asististe:
-  </h1>
+  <h1>Indica a qué edición asististe:</h1>
   <BotonesSeleccion />
 </section>
 
@@ -25,7 +22,7 @@
     font-family: "Futura Condensed Medium";
     margin-bottom: 0.7em;
   }
-  .enfasis {
+  /* .enfasis {
     font-family: "Futura Condensed Extra Bold";
-  }
+  } */
 </style>
