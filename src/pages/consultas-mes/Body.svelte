@@ -1,14 +1,12 @@
 <script>
   import EmailInput from "../../lib/EmailInput.svelte";
   import { consultaEmail } from "../../lib/consultas";
-  import { email } from "../../lib/stores";
+  import { email, isError, isInvalid } from "../../lib/stores";
   import { validateEmail } from "../../lib/validaciones";
 
-  let isError = false;
-
   const realizarConsulta = async () => {
-    isError = !validateEmail($email);
-    if (isError) return;
+    validateEmail($email);
+    if ($isInvalid) return;
     await consultaEmail($email);
   };
 </script>
@@ -16,19 +14,19 @@
 <section>
   <h3>Correo Electrónico</h3>
   <EmailInput on:submit={realizarConsulta} />
-  {#if isError}
+  {#if $isInvalid}
     <span class="error">Correo no válido</span>
   {/if}
-  <span class="top">
-    <p>
-      <b>Ingresa</b> el <b>correo electrónico</b> con el cual te
-      <b>registraste</b>
-    </p>
-  </span>
+  {#if $isError}
+    <span class="error">
+      Favor de ingresar el correo con el cual te registraste en el seminario de
+      aduanas.
+    </span>
+  {/if}
   <span class="bottom">
     <p>
-      al <b>Seminario Interactivo</b> de Aduanas
-      <b>2021</b>
+      Ingresa el correo electrónico con el cual te registraste al Seminario
+      Interactivo de Aduanas 2021
     </p>
   </span>
 </section>
@@ -67,7 +65,7 @@
     font-size: 1.2em;
     min-height: 30vh;
   }
-  b {
+  /* b {
     font-family: "Futura Condensed Extra Bold";
     color: white;
     width: 100%;
@@ -75,7 +73,7 @@
   .top {
     font-size: 1.1em;
     text-align: justify;
-  }
+  } */
   .bottom {
     font-size: 1.3em;
     text-align: justify;

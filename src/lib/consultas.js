@@ -1,8 +1,9 @@
-import { isLoading } from "./stores";
+import { isLoading, isError } from "./stores";
 import axios from "axios";
 
 export const consultaEmail = async (email = "") => {
   try {
+    isError.update(() => false)
     isLoading.update(() => true);
 
     const res = await axios.get(
@@ -25,6 +26,8 @@ export const consultaEmail = async (email = "") => {
     document.body.appendChild(link);
     link.click();
   } catch (error) {
+    console.log("error");
+    isError.update(() => true) 
   } finally {
     isLoading.update(() => false);
   }
