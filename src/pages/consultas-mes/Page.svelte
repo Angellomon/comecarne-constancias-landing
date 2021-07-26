@@ -10,7 +10,7 @@
 <div>
   <Header mes={currentRoute.namedParams.mes} />
   <Contenido>
-    <Body />
+    <Body mes={currentRoute.namedParams.mes} />
     <Footer />
   </Contenido>
 </div>
