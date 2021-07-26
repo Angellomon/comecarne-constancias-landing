@@ -1,13 +1,19 @@
 import { isLoading, isError } from "./stores";
 import axios from "axios";
 
-export const consultaEmail = async (email = "") => {
+const eventos = {
+  junio: "n00a6mvi7q",
+  julio: "y1riuaamiu",
+};
+
+export const consultaEmail = async (email = "", evento = "junio") => {
   try {
-    isError.update(() => false)
+    isError.update(() => false);
     isLoading.update(() => true);
 
     const res = await axios.get(
-      `https://umbrella-constancias.herokuapp.com/eventos/n00a6mvi7q/asistentes/buscar?correo=${email}`,
+      `https://umbrella-constancias.herokuapp.com/eventos/${eventos[evento]}/asistentes/buscar?correo=${email}`,
+      // `http://localhost:5001/eventos/${eventos[evento]}/asistentes/buscar?correo=${email}`,
       {
         responseType: "blob",
       }
@@ -21,13 +27,13 @@ export const consultaEmail = async (email = "") => {
     link.href = url;
     link.setAttribute(
       "download",
-      "CONSTANCIA DE PARTICIPACIÓN COMECARNE JUNIO 2021.pdf"
+      `CONSTANCIA DE PARTICIPACIÓN COMECARNE ${evento.toUpperCase()} 2021.pdf`
     ); //or any other extension
     document.body.appendChild(link);
     link.click();
   } catch (error) {
     console.log("error");
-    isError.update(() => true) 
+    isError.update(() => true);
   } finally {
     isLoading.update(() => false);
   }
