@@ -4,10 +4,12 @@
   import { email, isError, isInvalid } from "../../lib/stores";
   import { validateEmail } from "../../lib/validaciones";
 
+  export let mes = "junio";
+
   const realizarConsulta = async () => {
     validateEmail($email);
     if ($isInvalid) return;
-    await consultaEmail($email);
+    await consultaEmail($email, mes);
   };
 </script>
 
