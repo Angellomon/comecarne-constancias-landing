@@ -4,6 +4,7 @@ import axios from "axios";
 const eventos = {
   junio: "n00a6mvi7q",
   julio: "y1riuaamiu",
+  agosto: "x6i2rffwh8",
 };
 
 export const consultaEmail = async (email = "", evento = "junio") => {
