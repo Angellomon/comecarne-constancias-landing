@@ -5,6 +5,7 @@ const eventos = {
   junio: "n00a6mvi7q",
   julio: "y1riuaamiu",
   agosto: "x6i2rffwh8",
+  septiembre: "w2oi1w8h2a",
 };
 
 export const consultaEmail = async (email = "", evento = "junio") => {
