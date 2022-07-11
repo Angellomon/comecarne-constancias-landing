@@ -1,10 +1,10 @@
 <script>
-  import BotonesSeleccion from "../../lib/botones/BotonesMeses.svelte";
+  import EventsButtons from "../../lib/components/buttons/EventsButtons.svelte";
 </script>
 
 <section>
   <h1>Indica a qué edición asististe:</h1>
-  <BotonesSeleccion />
+  <EventsButtons />
 </section>
 
 <style>
@@ -22,7 +22,4 @@
     font-family: "Futura Condensed Medium";
     margin-bottom: 0.7em;
   }
-  /* .enfasis {
-    font-family: "Futura Condensed Extra Bold";
-  } */
 </style>

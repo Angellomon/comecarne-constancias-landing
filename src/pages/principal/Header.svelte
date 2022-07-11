@@ -1,12 +1,12 @@
 <script>
-  import logoSeminario from "../../assets/logo-seminario.png";
-  import cargamento from "../../assets/cargamento.png";
+  const cargamentos = "/img/cargamentos.png";
+  const logoSeminario = "/img/logos/seminario.png";
 </script>
 
 <section>
   <img class="logo-seminario" src={logoSeminario} alt="logo-seminario" />
   <h1>CONSTANCIAS</h1>
-  <img class="cargamento" src={cargamento} alt="cargamento" />
+  <img class="cargamentos" src={cargamentos} alt="cargamento" />
 </section>
 
 <style>
@@ -14,9 +14,14 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #f3a944;
+
     width: 100%;
     height: 30vh;
+
+    background-color: var(--bg-light);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
   h1 {
     font-size: 85px;
@@ -26,7 +31,7 @@
   .logo-seminario {
     max-height: 90%;
   }
-  .cargamento {
+  .cargamentos {
     max-height: 100%;
   }
 
@@ -44,7 +49,7 @@
       text-align: center;
       order: -1;
     }
-    .cargamento {
+    .cargamentos {
       max-height: 15em;
     }
   }
