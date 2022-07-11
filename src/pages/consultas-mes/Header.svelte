@@ -1,7 +1,8 @@
 <script>
-  import logoSeminario from "../../assets/logo-seminario.png";
-  import cargamento from "../../assets/cargamento.png";
   export let mes = "junio";
+
+  const cargamento = "/img/cargamento.png";
+  const logoSeminario = "/img/logos/seminario.png";
 </script>
 
 <section>
@@ -31,9 +32,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f3a944;
+    background-color: var(--bg-light);
     width: 100vw;
-    height: 35vh;
+    height: 30vh;
   }
   h1 {
     font-size: 3em;

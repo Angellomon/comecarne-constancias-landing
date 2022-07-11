@@ -1,8 +1,8 @@
 <script>
   import Body from "./Body.svelte";
   import Header from "./Header.svelte";
-  import Contenido from "../../lib/Contenido.svelte";
-  import Footer from "../../lib/Footer.svelte";
+  import Contenido from "../../lib/components/layout/Content.svelte";
+  import Footer from "../../lib/components/layout/Footer.svelte";
 
   export let currentRoute;
 </script>

@@ -1,5 +1,5 @@
 <script>
-  import EmailInput from "../../lib/EmailInput.svelte";
+  import EmailInput from "../../lib/components/inputs/EmailInput.svelte";
   import { consultaEmail } from "../../lib/consultas";
   import { email, isError, isInvalid } from "../../lib/stores";
   import { validateEmail } from "../../lib/validaciones";
