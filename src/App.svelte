@@ -8,6 +8,14 @@
 </main>
 
 <style>
+  :root {
+    --color-principal: #14375d;
+    --color-secundario: #9d1535;
+    --color-font-black: #333;
+    --color-font-white: #fff;
+    --bg-light: #fff;
+    --bg-dark: #333;
+  }
   @font-face {
     font-family: "Futura Condensed Extra Bold";
     src: url("/fonts/futura-condensed-extra-bold.otf");
