@@ -11,8 +11,8 @@
   <Header />
   <Contenido>
     <Body mes={currentRoute.namedParams.mes} />
-    <Footer />
   </Contenido>
+  <Footer />
 </div>
 
 <style>
