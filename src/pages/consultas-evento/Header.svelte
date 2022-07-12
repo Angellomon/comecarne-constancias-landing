@@ -12,7 +12,7 @@
     </div>
     <div class="wrap">
       <div class="titulo">
-        <Title funnyCorners={false} fontSize="50px" />
+        <Title funnyCorners={false} tinyFont />
       </div>
     </div>
   </Wrapper>
@@ -69,8 +69,6 @@
     align-items: center;
     flex-direction: column;
 
-    height: 40vh;
-
     background-color: transparent;
     background-image: url("/img/cargamentos.png");
     background-size: cover;
@@ -94,13 +92,9 @@
       z-index: 1;
     }
   }
-  @media (min-width: 1387px) {
-    /* h1 {
-      font-size: 3.6em;
-      text-align: center;
-      font-family: "Futura Condensed Extra Bold";
-      margin: -0.4em 0 0.4em 0;
-      padding: 0em 0;
-    } */
+  @media (min-width: 900px) {
+    section {
+      height: 45vh;
+    }
   }
 </style>
