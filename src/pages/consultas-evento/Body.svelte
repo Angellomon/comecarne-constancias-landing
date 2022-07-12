@@ -14,7 +14,7 @@
 </script>
 
 <section>
-  <h3>Correo Electrónico</h3>
+  <h2>Correo Electrónico</h2>
 
   <EmailInput on:submit={realizarConsulta} />
 
@@ -39,17 +39,17 @@
 </section>
 
 <style>
+  h2 {
+    font-family: "Montserrat Bold Italic";
+    color: var(--color-font-black);
+    text-align: center;
+  }
+
   span.error {
     color: crimson;
     text-align: center;
     margin-top: 0.3em;
     margin-bottom: 1em;
-  }
-
-  h3 {
-    font-family: "Futura Condensed Extra Bold";
-    color: white;
-    text-align: center;
   }
 
   p {
@@ -72,6 +72,7 @@
 
   p.linea-2 {
     font-size: 1.2em;
+    font-family: "Montserrat Medium";
   }
 
   section {
@@ -83,7 +84,7 @@
     min-height: 40vh;
 
     color: white;
-    font-family: "Futura Medium";
+    font-family: "Montserrat Regular";
     font-size: 1.2em;
 
     background-color: var(--bg-light);
@@ -100,13 +101,18 @@
     margin-top: 3vh;
   }
 
+  @media (min-width: 900px) {
+    section {
+    }
+  }
+
   @media (max-width: 968px) {
     section {
       margin: 0 15vw 12em 15vw;
     }
 
-    h3 {
-      font-family: "Futura Condensed Extra Bold";
+    h2 {
+      font-family: "Montserrat Bold";
       color: white;
       text-align: center;
     }
@@ -126,6 +132,7 @@
       margin: 0;
     }
   }
+
   @media (min-width: 1566px) {
     p {
       height: 1.2em;
