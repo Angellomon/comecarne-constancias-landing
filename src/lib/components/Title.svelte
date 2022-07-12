@@ -1,10 +1,11 @@
 <script>
   export let funnyCorners = true;
-  export let fontSize = "70px";
+
+  export let tinyFont = false;
 </script>
 
 <div class:funnyCorners>
-  <h1 style={`font-size:${fontSize};`}>CONSTANCIAS</h1>
+  <h1 class:tinyFont>CONSTANCIAS</h1>
 </div>
 
 <style>
@@ -14,14 +15,13 @@
     border-bottom-left-radius: 5vh;
 
     padding: 1em 2em;
-    height: 10vh;
 
     display: flex;
   }
 
   h1 {
-    font-family: "Futura Medium Italic";
     color: white;
+    font-family: "Montserrat Bold Italic";
 
     align-self: center;
   }
@@ -29,5 +29,36 @@
   div.funnyCorners {
     border-top-right-radius: 5vh;
     border-bottom-left-radius: 5vh;
+  }
+
+  @media (min-width: 900px) {
+    div {
+      height: 10vh;
+    }
+
+    h1 {
+      font-size: 5em;
+    }
+
+    h1.tinyFont {
+      font-size: 4em;
+    }
+  }
+
+  @media (min-width: 1366px) {
+    div {
+      height: 15vh;
+    }
+
+    h1 {
+      font-size: 5em;
+    }
+
+    h1.tinyFont {
+      font-size: 4em;
+    }
+  }
+
+  @media (min-width: 1920px) {
   }
 </style>
