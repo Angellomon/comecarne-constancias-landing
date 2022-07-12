@@ -26,7 +26,7 @@
     {#if $isLoading}
       <Icon class="loading" icon={faSpinner} />
     {:else}
-      <Icon lcass="submit" icon={faAngleRight} />
+      <Icon class="submit" icon={faAngleRight} />
     {/if}
   </button>
 </span>
@@ -36,37 +36,51 @@
     display: flex;
     justify-content: center;
     z-index: 99;
-    margin-bottom: 1em;
-    margin-left: 3vw;
-    margin-right: 3vw;
   }
   input {
-    background-color: #f3a944;
+    background-color: var(--color-principal);
+
     border: none;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
+
     color: white;
     font-family: "Futura Condensed Medium";
     font-weight: bold;
     font-size: 25px;
+
     text-align: center;
     min-width: 3.3em;
-    width: 100%;
+    border-bottom-left-radius: 2vh;
   }
+
+  input:focus-visible,
+  input:active,
+  input:focus,
+  input:hover {
+    border: none;
+    outline: none;
+  }
+
   button {
+    background-color: var(--color-principal);
+
     cursor: pointer;
     font-size: 25px;
-    background-color: #f3a944;
+
     margin-top: 0;
     margin-right: 1em;
+
     border: none;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
+
+    border-top-right-radius: 2vh;
   }
   button:active,
   button:focus,
   button:hover {
-    color: white;
+    color: var(--color-secundario);
   }
 
   button :global(.loading) {
@@ -76,7 +90,9 @@
     animation-timing-function: linear;
   }
   button :global(.submit) {
-    margin-top: 1em;
+    margin-top: 0.2em;
+    color: white;
+    border: none;
   }
   @keyframes spin {
     from {
