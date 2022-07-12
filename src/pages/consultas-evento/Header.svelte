@@ -1,63 +1,83 @@
 <script>
+  import Title from "../../lib/components/Title.svelte";
   import Wrapper from "../../lib/components/layout/Wrapper.svelte";
 
-  export let mes = "junio";
-
-  const cargamento = "/img/cargamento.png";
   const logoSeminario = "/img/logos/seminario.png";
 </script>
 
 <section>
-  <Wrapper>
-    <div class="space" />
-    <div class="titulo">
-      <h1>CONSTANCIAS {mes.toUpperCase()}</h1>
+  <Wrapper direction="column">
+    <div class="espacio-logo">
       <img class="logo-seminario" src={logoSeminario} alt="logo-seminario" />
     </div>
-    <div class="logo">
-      <img class="cargamento" src={cargamento} alt="cargamento" />
+    <div class="wrap">
+      <div class="titulo">
+        <Title funnyCorners={false} fontSize="50px" />
+      </div>
     </div>
   </Wrapper>
 </section>
 
 <style>
-  .space {
-    height: 10px;
-    width: 18vw;
-  }
-  .titulo {
+  div.espacio-logo {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
     width: 50vw;
+
+    position: absolute;
+    top: 5vh;
   }
+
+  img.logo-seminario {
+    max-height: 13em;
+    max-width: 13em;
+
+    z-index: 9000;
+  }
+
+  div.titulo {
+    display: flex;
+    justify-content: center;
+
+    background-color: var(--color-secundario);
+
+    border-bottom: 4px solid white;
+    border-left: 4px solid white;
+    border-right: 4px solid white;
+
+    margin-bottom: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  div.wrap {
+    width: 100%;
+
+    position: absolute;
+    bottom: 0;
+    background-color: var(--color-secundario);
+  }
+
   section {
+    padding: 20px;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--bg-light);
-    width: 100vw;
+    flex-direction: column;
+
     height: 40vh;
-  }
-  h1 {
-    font-size: 3em;
-    text-align: center;
-    font-family: "Futura Condensed Extra Bold";
-    margin: 0.5em 0 0.4em 0;
-    padding: 0em 0;
-  }
-  .logo-seminario {
-    max-height: 11em;
-    max-width: 11em;
-  }
-  .cargamento {
-    max-height: 35.5vh;
-  }
-  .logo {
-    margin: 0;
-    padding: 0;
-    width: 18vw;
+
+    background-color: transparent;
+    background-image: url("/img/cargamentos.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    position: relative;
   }
 
   @media (max-width: 895px) {
@@ -73,25 +93,14 @@
       max-width: 200px;
       z-index: 1;
     }
-    h1 {
-      font-size: 45px;
-      text-align: center;
-      margin: 0em 0 0.4em 0;
-      order: -1;
-    }
-    .cargamento {
-      max-height: 15em;
-      margin-top: -1.8em;
-      z-index: 0;
-    }
   }
   @media (min-width: 1387px) {
-    h1 {
+    /* h1 {
       font-size: 3.6em;
       text-align: center;
       font-family: "Futura Condensed Extra Bold";
       margin: -0.4em 0 0.4em 0;
       padding: 0em 0;
-    }
+    } */
   }
 </style>
