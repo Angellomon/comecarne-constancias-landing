@@ -15,81 +15,102 @@
 
 <section>
   <h3>Correo Electrónico</h3>
+
   <EmailInput on:submit={realizarConsulta} />
+
   {#if $isInvalid}
     <span class="error">Correo no válido</span>
   {/if}
+
   {#if $isError}
     <span class="error">
       Favor de ingresar el correo con el cual te registraste en el seminario de
       aduanas.
     </span>
   {/if}
+
   <span class="bottom">
-    <p>
-      Ingresa el correo electrónico con el cual te registraste al Seminario
-      Interactivo de Aduanas 2021
+    <p class="linea-1">
+      Ingresa el correo electrónico con el cual te registraste
     </p>
+
+    <p class="linea-2">al Seminario Interactivo de Aduanas 2022</p>
   </span>
 </section>
 
 <style>
-  .error {
-    color: red;
+  span.error {
+    color: crimson;
     text-align: center;
-    margin-top: -1em;
+    margin-top: 0.3em;
     margin-bottom: 1em;
   }
+
   h3 {
     font-family: "Futura Condensed Extra Bold";
     color: white;
     text-align: center;
   }
+
   p {
-    margin: 0;
-    width: 100%;
     margin: 0;
     height: 1.2em;
     text-align: center;
+    color: var(--color-font-black);
   }
+
   p:after {
     content: "";
     display: inline-block;
     width: 100%;
     margin: 0;
   }
+
+  p.linea-1 {
+    font-size: 0.9em;
+  }
+
+  p.linea-2 {
+    font-size: 1.2em;
+  }
+
   section {
     display: flex;
     flex-direction: column;
-    margin: 0 25vw 12em 25vw;
-    color: white;
-    font-family: "Futura Condensed Medium";
-    font-size: 1.2em;
+
+    /* margin: 0 25vw 12em 25vw; */
+
     min-height: 30vh;
-  }
-  /* b {
-    font-family: "Futura Condensed Extra Bold";
+
     color: white;
-    width: 100%;
+    font-family: "Futura Medium";
+    font-size: 1.2em;
+
+    background-color: var(--bg-light);
+    background-image: url("/img/fondo-carne.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
-  .top {
-    font-size: 1.1em;
-    text-align: justify;
-  } */
-  .bottom {
+
+  span.bottom {
     font-size: 1.3em;
     text-align: justify;
+
+    margin-top: 3vh;
   }
 
   @media (max-width: 968px) {
     section {
       margin: 0 15vw 12em 15vw;
     }
+
     h3 {
       font-family: "Futura Condensed Extra Bold";
       color: white;
       text-align: center;
     }
+
     p {
       margin: 0;
       width: 100%;
@@ -97,6 +118,7 @@
       height: 1.2em;
       text-align: justify;
     }
+
     p:after {
       content: "";
       display: inline-block;
@@ -108,12 +130,14 @@
     p {
       height: 1.2em;
     }
+
     p:after {
       content: "";
       display: inline-block;
       width: 100%;
       margin: 0;
     }
+
     section {
       margin: 0 35% 12em 35%;
     }
