@@ -8,7 +8,7 @@
 </script>
 
 <div>
-  <Header mes={currentRoute.namedParams.mes} />
+  <Header />
   <Contenido>
     <Body mes={currentRoute.namedParams.mes} />
     <Footer />
