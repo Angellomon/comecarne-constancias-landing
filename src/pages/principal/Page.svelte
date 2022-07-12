@@ -9,8 +9,8 @@
   <Header />
   <Contenido>
     <Body />
-    <Footer />
   </Contenido>
+  <Footer />
 </section>
 
 <style>

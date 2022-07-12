@@ -24,6 +24,18 @@
     font-family: "Futura Condensed Medium";
     src: url("/fonts/futura-condensed-medium.otf");
   }
+  @font-face {
+    font-family: "Futura Condensed Bold";
+    src: url("/fonts/futura-condensed-bold.ttf");
+  }
+  @font-face {
+    font-family: "Futura Medium";
+    src: url("/fonts/futura-medium.ttf");
+  }
+  @font-face {
+    font-family: "Futura Medium Italic";
+    src: url("/fonts/futura-medium-italic.ttf");
+  }
   main {
     max-width: 100%;
     overflow-x: hidden;

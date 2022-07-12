@@ -3,23 +3,29 @@
 </script>
 
 <section>
-  <h1>Indica a qué edición asististe:</h1>
+  <h1>Indica a qué <b>edición</b> asististe:</h1>
   <EventsButtons />
 </section>
 
 <style>
   section {
-    background-color: #0d070b;
-    height: 100%;
-    min-height: 57vh;
     display: flex;
     flex-direction: column;
+
+    height: 100%;
+    min-height: 40vh;
+
+    background-color: var(--bg-light);
+    background-image: url("/img/fondo-carne.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
   h1 {
     text-align: center;
     font-size: 2.8rem;
-    color: white;
-    font-family: "Futura Condensed Medium";
+    color: var(--color-font-black);
+    font-family: "Futura Medium";
     margin-bottom: 0.7em;
   }
 </style>

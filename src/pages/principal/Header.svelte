@@ -1,38 +1,34 @@
 <script>
-  const cargamentos = "/img/cargamentos.png";
+  import Title from "../../lib/components/Title.svelte";
+  import Wrapper from "../../lib/components/layout/Wrapper.svelte";
+
   const logoSeminario = "/img/logos/seminario.png";
 </script>
 
 <section>
-  <img class="logo-seminario" src={logoSeminario} alt="logo-seminario" />
-  <h1>CONSTANCIAS</h1>
-  <img class="cargamentos" src={cargamentos} alt="cargamento" />
+  <Wrapper>
+    <img class="logo-seminario" src={logoSeminario} alt="logo-seminario" />
+    <Title />
+  </Wrapper>
 </section>
 
 <style>
   section {
+    padding: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 
-    width: 100%;
     height: 30vh;
 
     background-color: var(--bg-light);
+    background-image: url("/img/cargamentos.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
   }
-  h1 {
-    font-size: 85px;
-    text-align: center;
-    font-family: "Futura Condensed Extra Bold";
-  }
-  .logo-seminario {
+  img.logo-seminario {
     max-height: 90%;
-  }
-  .cargamentos {
-    max-height: 100%;
   }
 
   @media (max-width: 895px) {
@@ -42,14 +38,6 @@
       height: 100%;
     }
     .logo-seminario {
-      max-height: 15em;
-    }
-    h1 {
-      font-size: 50px;
-      text-align: center;
-      order: -1;
-    }
-    .cargamentos {
       max-height: 15em;
     }
   }

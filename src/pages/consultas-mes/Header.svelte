@@ -1,4 +1,6 @@
 <script>
+  import Wrapper from "../../lib/components/layout/Wrapper.svelte";
+
   export let mes = "junio";
 
   const cargamento = "/img/cargamento.png";
@@ -6,14 +8,16 @@
 </script>
 
 <section>
-  <div class="space" />
-  <div class="titulo">
-    <h1>CONSTANCIAS {mes.toUpperCase()}</h1>
-    <img class="logo-seminario" src={logoSeminario} alt="logo-seminario" />
-  </div>
-  <div class="logo">
-    <img class="cargamento" src={cargamento} alt="cargamento" />
-  </div>
+  <Wrapper>
+    <div class="space" />
+    <div class="titulo">
+      <h1>CONSTANCIAS {mes.toUpperCase()}</h1>
+      <img class="logo-seminario" src={logoSeminario} alt="logo-seminario" />
+    </div>
+    <div class="logo">
+      <img class="cargamento" src={cargamento} alt="cargamento" />
+    </div>
+  </Wrapper>
 </section>
 
 <style>
@@ -34,7 +38,7 @@
     align-items: center;
     background-color: var(--bg-light);
     width: 100vw;
-    height: 30vh;
+    height: 40vh;
   }
   h1 {
     font-size: 3em;
