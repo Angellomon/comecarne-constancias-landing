@@ -13,7 +13,7 @@
     flex-direction: column;
 
     height: 100%;
-    min-height: 40vh;
+    min-height: 50vh;
 
     background-color: var(--bg-light);
     background-image: url("/img/fondo-carne.png");
