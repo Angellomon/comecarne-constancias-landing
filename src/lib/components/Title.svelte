@@ -29,8 +29,5 @@
   div.funnyCorners {
     border-top-right-radius: 5vh;
     border-bottom-left-radius: 5vh;
-
-    position: absolute;
-    bottom: 0;
   }
 </style>
