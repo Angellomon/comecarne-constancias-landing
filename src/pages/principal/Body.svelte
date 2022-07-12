@@ -13,7 +13,6 @@
     flex-direction: column;
 
     height: 100%;
-    min-height: 50vh;
 
     background-color: var(--bg-light);
     background-image: url("/img/fondo-carne.png");
@@ -23,9 +22,36 @@
   }
   h1 {
     text-align: center;
-    font-size: 2.8rem;
+
     color: var(--color-font-black);
-    font-family: "Futura Medium";
-    margin-bottom: 0.7em;
+    font-family: "Montserrat Light";
+
+    margin-bottom: 1.2em;
+  }
+
+  b {
+    font-family: "Montserrat Bold";
+  }
+
+  @media (min-width: 900px) {
+    h1 {
+      font-size: 2em;
+    }
+
+    section {
+      min-height: 50vh;
+    }
+  }
+
+  @media (min-width: 1368px) {
+    h1 {
+      font-size: 3em;
+    }
+  }
+
+  @media (min-width: 1920px) {
+    h1 {
+      font-size: 4em;
+    }
   }
 </style>
