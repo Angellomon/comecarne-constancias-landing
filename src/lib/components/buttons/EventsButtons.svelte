@@ -24,16 +24,31 @@
   }
   p {
     color: white;
-    font-family: "Futura Medium Italic";
+    font-family: "Montserrat Semi Bold Italic";
     margin: 0;
   }
-  p.first {
-    font-size: 1.2em;
+
+  @media (min-width: 900px) {
+    p.first {
+      font-size: 1.2em;
+    }
+    p.second {
+      font-size: 0.7em;
+    }
+    p.julio {
+      font-size: 2em;
+    }
   }
-  p.second {
-    font-size: 0.7em;
-  }
-  p.julio {
-    font-size: 2em;
+
+  @media (min-width: 1368px) {
+    p.first {
+      font-size: 2em;
+    }
+    p.second {
+      font-size: 1.5em;
+    }
+    p.julio {
+      font-size: 3em;
+    }
   }
 </style>
