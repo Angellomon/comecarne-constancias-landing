@@ -45,7 +45,7 @@
     border-bottom-left-radius: 3px;
 
     color: white;
-    font-family: "Futura Condensed Medium";
+    font-family: "Montserrat Light";
     font-weight: bold;
     font-size: 25px;
 
