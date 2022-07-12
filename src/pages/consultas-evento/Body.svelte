@@ -80,7 +80,7 @@
 
     /* margin: 0 25vw 12em 25vw; */
 
-    min-height: 30vh;
+    min-height: 40vh;
 
     color: white;
     font-family: "Futura Medium";
