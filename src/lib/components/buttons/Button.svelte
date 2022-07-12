@@ -30,7 +30,7 @@
     cursor: pointer;
 
     border: none;
-    border-top-right-radius: 5vh;
-    border-bottom-left-radius: 5vh;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
   }
 </style>
