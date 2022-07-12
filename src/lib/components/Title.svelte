@@ -1,5 +1,10 @@
-<div>
-  <h1>CONSTANCIAS</h1>
+<script>
+  export let funnyCorners = true;
+  export let fontSize = "70px";
+</script>
+
+<div class:funnyCorners>
+  <h1 style={`font-size:${fontSize};`}>CONSTANCIAS</h1>
 </div>
 
 <style>
@@ -17,8 +22,15 @@
   h1 {
     font-family: "Futura Medium Italic";
     color: white;
-    font-size: 70px;
 
     align-self: center;
+  }
+
+  div.funnyCorners {
+    border-top-right-radius: 5vh;
+    border-bottom-left-radius: 5vh;
+
+    position: absolute;
+    bottom: 0;
   }
 </style>
