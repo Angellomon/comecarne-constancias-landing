@@ -8,6 +8,56 @@
 </main>
 
 <style>
+  @font-face {
+    font-family: "Montserrat Regular";
+    src: url("/fonts/montserrat-regular.ttf");
+  }
+
+  @font-face {
+    font-family: "Montserrat Medium";
+    src: url("/fonts/montserrat-medium.ttf");
+  }
+
+  @font-face {
+    font-family: "Montserrat Thin";
+    src: url("/fonts/montserrat-thin.ttf");
+  }
+
+  @font-face {
+    font-family: "Montserrat Bold";
+    src: url("/fonts/montserrat-bold.ttf");
+  }
+
+  @font-face {
+    font-family: "Montserrat Bold Italic";
+    src: url("/fonts/montserrat-bold-italic.ttf");
+  }
+
+  @font-face {
+    font-family: "Montserrat Semi Bold";
+    src: url("/fonts/montserrat-semi-bold.ttf");
+  }
+
+  @font-face {
+    font-family: "Montserrat Semi Bold Italic";
+    src: url("/fonts/montserrat-semi-bold-italic.ttf");
+  }
+
+  @font-face {
+    font-family: "Montserrat Italic";
+    src: url("/fonts/montserrat-italic.ttf");
+  }
+
+  @font-face {
+    font-family: "Montserrat Light";
+    src: url("/fonts/montserrat-light.ttf");
+  }
+
+  @font-face {
+    font-family: "Montserrat Light Italic";
+    src: url("/fonts/montserrat-light-italic.ttf");
+  }
+
   :root {
     --color-principal: #14375d;
     --color-secundario: #9d1535;
@@ -15,27 +65,9 @@
     --color-font-white: #fff;
     --bg-light: #fff;
     --bg-dark: #333;
+    font-family: "Montserrat Regular";
   }
-  @font-face {
-    font-family: "Futura Condensed Extra Bold";
-    src: url("/fonts/futura-condensed-extra-bold.otf");
-  }
-  @font-face {
-    font-family: "Futura Condensed Medium";
-    src: url("/fonts/futura-condensed-medium.otf");
-  }
-  @font-face {
-    font-family: "Futura Condensed Bold";
-    src: url("/fonts/futura-condensed-bold.ttf");
-  }
-  @font-face {
-    font-family: "Futura Medium";
-    src: url("/fonts/futura-medium.ttf");
-  }
-  @font-face {
-    font-family: "Futura Medium Italic";
-    src: url("/fonts/futura-medium-italic.ttf");
-  }
+
   main {
     max-width: 100%;
     overflow-x: hidden;
