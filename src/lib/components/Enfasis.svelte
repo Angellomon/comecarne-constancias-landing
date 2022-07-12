@@ -4,7 +4,7 @@
 
 <style>
   span {
-    font-family: "Futura Condensed Extra Bold";
+    font-family: "Montserrat Bold";
     color: white;
   }
 </style>
