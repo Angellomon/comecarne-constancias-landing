@@ -6,7 +6,7 @@
 </script>
 
 <section>
-  <Wrapper direction="column">
+  <Wrapper>
     <div class="espacio-logo">
       <img class="logo-seminario" src={logoSeminario} alt="logo-seminario" />
     </div>
@@ -44,10 +44,6 @@
 
     background-color: var(--color-secundario);
 
-    border-bottom: 4px solid white;
-    border-left: 4px solid white;
-    border-right: 4px solid white;
-
     margin-bottom: 16px;
     margin-left: 16px;
     margin-right: 16px;
@@ -58,7 +54,6 @@
 
     position: absolute;
     bottom: 0;
-    background-color: var(--color-secundario);
   }
 
   section {
@@ -78,23 +73,49 @@
     position: relative;
   }
 
-  @media (max-width: 895px) {
-    section {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-    }
-    .logo-seminario {
-      max-height: 200px;
-      max-width: 200px;
-      z-index: 1;
-    }
-  }
   @media (min-width: 900px) {
     section {
       height: 45vh;
+    }
+
+    div.wrap {
+      position: absolute;
+      bottom: 0;
+      background-color: var(--color-secundario);
+      width: 100vw;
+    }
+
+    div.titulo {
+      border-bottom: 4px solid white;
+      border-left: 4px solid white;
+      border-right: 4px solid white;
+    }
+  }
+
+  @media (max-width: 900px) {
+    section {
+      height: 30vh;
+      background-color: transparent;
+    }
+
+    img.logo-seminario {
+      max-height: 10em;
+      max-width: 10em;
+
+      z-index: 9000;
+    }
+
+    div.titulo {
+      background-color: transparent;
+
+      border-bottom: none;
+      border-left: none;
+      border-right: none;
+    }
+
+    div.wrap {
+      position: absolute;
+      bottom: 2vh;
     }
   }
 </style>
