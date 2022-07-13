@@ -1,8 +1,4 @@
-<script>
-  export let direction = "row";
-</script>
-
-<div class={direction}>
+<div>
   <slot />
 </div>
 
@@ -13,16 +9,15 @@
     border: 4px solid white;
 
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     background-color: transparent;
   }
 
-  div.row {
-    flex-direction: row;
-  }
-
-  div.column {
-    flex-direction: column;
+  @media (max-width: 900px) {
+    div {
+      flex-direction: column;
+    }
   }
 </style>
