@@ -17,6 +17,8 @@ export const logosFooter = readable({
   canada: `${logosBase}/canada.png`,
   usda: `${logosBase}/usda.png`,
   comecarne: `${logosBase}/comecarne.png`,
+  cofepris: `${logosBase}/cofepris.png`,
+  brasil: `${logosBase}/brasil.png`,
 });
 
 export const logosEvento = readable({
