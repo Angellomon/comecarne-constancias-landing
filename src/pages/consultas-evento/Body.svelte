@@ -78,7 +78,9 @@
   section {
     display: flex;
     flex-direction: column;
+    align-items: center;
 
+    margin-top: 0vh;
     /* margin: 0 25vw 12em 25vw; */
 
     min-height: 40vh;
@@ -103,6 +105,24 @@
 
   @media (min-width: 900px) {
     section {
+    }
+  }
+
+  @media (max-width: 900px) {
+    section {
+    }
+
+    p {
+      height: 2.5em;
+    }
+
+    p.linea-1 {
+      font-size: 0.7em;
+    }
+
+    p.linea-2 {
+      font-size: 1.2em;
+      font-family: "Montserrat Medium";
     }
   }
 </style>
