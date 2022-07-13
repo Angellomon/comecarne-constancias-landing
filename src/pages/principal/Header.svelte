@@ -8,7 +8,7 @@
 <section>
   <Wrapper>
     <img class="logo-seminario" src={logoSeminario} alt="logo-seminario" />
-    <Title />
+    <Title funnyCorners tinyFont={false} />
   </Wrapper>
 </section>
 
@@ -31,14 +31,15 @@
     max-height: 90%;
   }
 
-  @media (max-width: 895px) {
+  @media (max-width: 900px) {
     section {
       display: flex;
       flex-direction: column;
-      height: 100%;
+      height: 30vh;
     }
-    .logo-seminario {
-      max-height: 15em;
+    img.logo-seminario {
+      max-height: 10em;
+      max-width: 10em;
     }
   }
 </style>
