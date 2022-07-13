@@ -11,8 +11,6 @@
 <style>
   div {
     background-color: var(--color-secundario);
-    border-top-right-radius: 5vh;
-    border-bottom-left-radius: 5vh;
 
     padding: 1em 2em;
 
@@ -27,8 +25,8 @@
   }
 
   div.funnyCorners {
-    border-top-right-radius: 5vh;
-    border-bottom-left-radius: 5vh;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
   }
 
   @media (min-width: 900px) {
@@ -45,7 +43,22 @@
     }
   }
 
-  @media (min-width: 1366px) {
+  @media (max-width: 900px) {
+    div {
+      height: 3vh;
+
+      margin-top: -20px;
+
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+    }
+
+    h1 {
+      font-size: 2em;
+    }
+  }
+
+  @media (min-width: 900px) and (max-width: 1300px) {
     div {
       height: 15vh;
     }
@@ -59,6 +72,17 @@
     }
   }
 
-  @media (min-width: 1920px) {
+  @media (max-width: 1300px) and (min-width: 1300px) {
+    div {
+      height: 15vh;
+    }
+
+    h1 {
+      font-size: 6em;
+    }
+
+    h1.tinyFont {
+      font-size: 4em;
+    }
   }
 </style>
