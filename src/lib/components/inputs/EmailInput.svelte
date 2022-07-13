@@ -48,6 +48,7 @@
     font-family: "Montserrat Light";
     font-weight: bold;
     font-size: 25px;
+    padding: 0.5em;
 
     text-align: center;
     min-width: 3.3em;
@@ -108,6 +109,16 @@
     }
     input {
       width: 70vw;
+    }
+  }
+
+  @media (max-width: 900px) {
+    input {
+      font-size: 20px;
+    }
+
+    span {
+      width: 80vw;
     }
   }
 </style>
