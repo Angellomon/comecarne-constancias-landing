@@ -28,7 +28,7 @@
     margin: 0;
   }
 
-  @media (min-width: 900px) {
+  @media (max-width: 900px) {
     p.first {
       font-size: 1.2em;
     }
@@ -40,9 +40,9 @@
     }
   }
 
-  @media (min-width: 1368px) {
+  @media (min-width: 900px) {
     p.first {
-      font-size: 2em;
+      font-size: 2.2em;
     }
     p.second {
       font-size: 1.5em;
