@@ -30,8 +30,14 @@
     cursor: pointer;
 
     border: none;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  @media (max-height: 900px) {
+    button {
+      min-width: 70vw;
+    }
   }
 
   @media (min-width: 900px) {
