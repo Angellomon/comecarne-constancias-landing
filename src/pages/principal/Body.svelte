@@ -19,6 +19,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+
+    margin-bottom: 1.5vh;
   }
   h1 {
     text-align: center;
@@ -33,9 +35,9 @@
     font-family: "Montserrat Bold";
   }
 
-  @media (min-width: 900px) {
+  @media (max-width: 900px) {
     h1 {
-      font-size: 2em;
+      font-size: 1.5em;
     }
 
     section {
@@ -52,6 +54,10 @@
   @media (min-width: 1920px) {
     h1 {
       font-size: 4em;
+    }
+
+    section {
+      min-height: 40vh;
     }
   }
 </style>
