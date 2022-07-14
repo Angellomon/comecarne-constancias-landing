@@ -16,10 +16,10 @@
 <span>
   <input
     on:keydown={(value) => {
-      if (value.key == "Enter" || value.keyCode == 13) submit();
+      if (value.keyCode == 13 || value.key == "Enter") submit();
     }}
     placeholder="correo@ejemplo.com"
-    bind={$email}
+    bind:value={$email}
     type="email"
   />
   <button on:click={submit}>
@@ -43,6 +43,8 @@
     border: none;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
+
+    align-items: center;
 
     color: white;
     font-family: "Montserrat Light";
@@ -89,6 +91,7 @@
     animation-duration: 2000ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    color: white;
   }
   button :global(.submit) {
     margin-top: 0.2em;
