@@ -11,6 +11,7 @@
   section {
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     height: 100%;
 
@@ -45,9 +46,13 @@
     }
   }
 
-  @media (min-width: 1368px) {
+  @media (min-width: 900px) and (max-width: 1368px) {
     h1 {
       font-size: 3em;
+    }
+
+    section {
+      min-height: 45vh;
     }
   }
 
