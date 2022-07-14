@@ -1,5 +1,5 @@
 import PageSeleccion from "./pages/principal/Page.svelte";
-import PageMes from "./pages/consultas-mes/Page.svelte";
+import PageMes from "./pages/consultas-evento/Page.svelte";
 
 const routes = [
   {

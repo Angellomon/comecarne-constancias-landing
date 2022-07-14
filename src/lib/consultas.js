@@ -2,10 +2,8 @@ import { isLoading, isError } from "./stores";
 import axios from "axios";
 
 const eventos = {
-  junio: "n00a6mvi7q",
-  julio: "y1riuaamiu",
-  agosto: "x6i2rffwh8",
-  septiembre: "w2oi1w8h2a",
+  "2022-aduanas-nuevo-laredo-tam": "6pb2p1l4uy",
+  "2022-aduanas-colombia-nl": "f3p3swx1j6",
 };
 
 export const consultaEmail = async (email = "", evento = "junio") => {
@@ -14,8 +12,8 @@ export const consultaEmail = async (email = "", evento = "junio") => {
     isLoading.update(() => true);
 
     const res = await axios.get(
-      `https://umbrella-constancias.herokuapp.com/eventos/${eventos[evento]}/asistentes/buscar?correo=${email}`,
-      // `http://localhost:5001/eventos/${eventos[evento]}/asistentes/buscar?correo=${email}`,
+      `https://umbrella-constancias.herokuapp.com/pdf/${eventos[evento]}?correo=${email}`,
+      // `http://localhost:5001/pdf/${eventos[evento]}?correo=${email}`,
       {
         responseType: "blob",
       }
