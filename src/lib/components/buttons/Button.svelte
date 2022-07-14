@@ -40,9 +40,10 @@
     }
   }
 
-  @media (min-width: 900px) {
+  @media (min-width: 900px) and (max-width: 1800px) {
     button {
-      min-height: 3.5em;
+      min-height: 5.7em;
+      min-width: auto;
     }
   }
 

@@ -17,7 +17,7 @@
 </div>
 
 <style>
-  .botones-seleccion {
+  div.botones-seleccion {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -29,6 +29,9 @@
   }
 
   @media (max-width: 900px) {
+    div.botones-seleccion {
+      flex-direction: column;
+    }
     p.first {
       font-size: 1.2em;
     }
@@ -40,7 +43,25 @@
     }
   }
 
-  @media (min-width: 900px) {
+  @media (min-width: 900px) and (max-width: 1800px) {
+    div.botones-seleccion {
+      flex-direction: row;
+    }
+    p.first {
+      font-size: 1.9em;
+    }
+    p.second {
+      font-size: 1.2em;
+    }
+    p.julio {
+      font-size: 2.3em;
+    }
+  }
+
+  @media (min-width: 1800px) {
+    div.botones-seleccion {
+      flex-direction: row;
+    }
     p.first {
       font-size: 2.2em;
     }
