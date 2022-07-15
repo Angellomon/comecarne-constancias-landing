@@ -8,7 +8,7 @@
     <p class="second">COLOMBIA, NUEVO LEÓN</p>
   </Boton>
   <Boton path="consulta/2022-aduanas-nuevo-laredo-tam" disabled={false}>
-    <p class="first">24 y 24 de junio</p>
+    <p class="first">23 y 24 de junio</p>
     <p class="second">NUEVO LAREDO, TAMAULIPAS</p>
   </Boton>
   <Boton path="consulta/2022-julio" disabled={false}>
