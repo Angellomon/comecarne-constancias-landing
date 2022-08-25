@@ -14,8 +14,8 @@ export const consultaEmail = async (email = "", evento = "junio") => {
     isLoading.update(() => true);
 
     const res = await axios.get(
-      // `https://umbrella-constancias.herokuapp.com/pdf/${eventos[evento]}?correo=${email}`,
-      `http://localhost:5001/pdf/${eventos[evento]}?correo=${email}`,
+      `https://umbrella-constancias.herokuapp.com/pdf/${eventos[evento]}?correo=${email}`,
+      // `http://localhost:5001/pdf/${eventos[evento]}?correo=${email}`,
       {
         responseType: "blob",
       }
