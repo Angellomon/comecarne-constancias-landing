@@ -3,7 +3,7 @@
 </script>
 
 <section>
-  <h1>Indica a qué <b>edición</b> asististe:</h1>
+  <h1>Indica a qué <b>edición</b> asististe :</h1>
   <EventsButtons />
 </section>
 
@@ -56,13 +56,13 @@
     }
   }
 
-  @media (min-width: 1920px) {
+  @media (min-width: 1368px) {
     h1 {
-      font-size: 4em;
+      font-size: 3.5em;
     }
 
     section {
-      min-height: 40vh;
+      min-height: 45vh;
     }
   }
 </style>
