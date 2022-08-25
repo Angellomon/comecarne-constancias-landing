@@ -15,6 +15,10 @@
     <p class="first">12 al 15 de julio</p>
     <p class="julio">EDICIÓN VIRTUAL</p>
   </Boton>
+  <Boton path="consulta/2022-agosto" disabled={false}>
+    <p class="first">24 y 25 de agosto</p>
+    <p class="julio">MANZANILLO, COLIMA</p>
+  </Boton>
 </div>
 
 <style>

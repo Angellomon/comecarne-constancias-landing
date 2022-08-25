@@ -5,6 +5,7 @@ const eventos = {
   "2022-aduanas-nuevo-laredo-tam": "6pb2p1l4uy",
   "2022-aduanas-colombia-nl": "f3p3swx1j6",
   "2022-julio": "2c3jkv9lcn",
+  "2022-agosto": "5fvqbxfl7k",
 };
 
 export const consultaEmail = async (email = "", evento = "junio") => {
@@ -13,8 +14,8 @@ export const consultaEmail = async (email = "", evento = "junio") => {
     isLoading.update(() => true);
 
     const res = await axios.get(
-      `https://umbrella-constancias.herokuapp.com/pdf/${eventos[evento]}?correo=${email}`,
-      // `http://localhost:5001/pdf/${eventos[evento]}?correo=${email}`,
+      // `https://umbrella-constancias.herokuapp.com/pdf/${eventos[evento]}?correo=${email}`,
+      `http://localhost:5001/pdf/${eventos[evento]}?correo=${email}`,
       {
         responseType: "blob",
       }
