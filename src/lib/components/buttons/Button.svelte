@@ -44,12 +44,18 @@
     button {
       min-height: 5.7em;
       min-width: auto;
+
+      border-top-right-radius: 35px;
+      border-bottom-left-radius: 35px;
     }
   }
 
   @media (min-width: 1800px) {
     button {
       min-height: 6.5em;
+
+      border-top-right-radius: 35px;
+      border-bottom-left-radius: 35px;
     }
   }
 </style>
