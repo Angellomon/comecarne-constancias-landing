@@ -4,6 +4,7 @@ import axios from "axios";
 const eventos = {
   "2022-aduanas-nuevo-laredo-tam": "6pb2p1l4uy",
   "2022-aduanas-colombia-nl": "f3p3swx1j6",
+  "2022-julio": "2c3jkv9lcn",
 };
 
 export const consultaEmail = async (email = "", evento = "junio") => {
