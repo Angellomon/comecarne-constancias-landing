@@ -6,6 +6,7 @@ const eventos = {
   "2022-aduanas-colombia-nl": "f3p3swx1j6",
   "2022-julio": "2c3jkv9lcn",
   "2022-agosto": "5fvqbxfl7k",
+  "2022-septiembre": "dcey1b5nmu",
 };
 
 export const consultaEmail = async (email = "", evento = "junio") => {
