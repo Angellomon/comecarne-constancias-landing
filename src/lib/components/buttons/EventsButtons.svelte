@@ -7,17 +7,25 @@
     <p class="first">21 y 22 de junio</p>
     <p class="second">COLOMBIA, NUEVO LEÓN</p>
   </Boton>
+
   <Boton path="consulta/2022-aduanas-nuevo-laredo-tam" disabled={false}>
     <p class="first">23 y 24 de junio</p>
     <p class="second">NUEVO LAREDO, TAMAULIPAS</p>
   </Boton>
+
   <Boton path="consulta/2022-julio" disabled={false}>
     <p class="first">12 al 15 de julio</p>
     <p class="julio">EDICIÓN VIRTUAL</p>
   </Boton>
+
   <Boton path="consulta/2022-agosto" disabled={false}>
     <p class="first">24 y 25 de agosto</p>
     <p class="julio">MANZANILLO, COLIMA</p>
+  </Boton>
+
+  <Boton path="consulta/2022-septiembre" disabled={false}>
+    <p class="first">06 al 09 de septiembre</p>
+    <p class="julio">EDICIÓN VIRTUAL</p>
   </Boton>
 </div>
 
@@ -27,7 +35,6 @@
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    
   }
 
   p {
