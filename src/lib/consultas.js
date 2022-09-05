@@ -30,7 +30,7 @@ export const consultaEmail = async (email = "", evento = "junio") => {
     link.href = url;
     link.setAttribute(
       "download",
-      `CONSTANCIA DE PARTICIPACIÓN COMECARNE ${evento.toUpperCase()} 2021.pdf`
+      `CONSTANCIA DE PARTICIPACIÓN COMECARNE ${evento.toUpperCase()}.pdf`
     ); //or any other extension
     document.body.appendChild(link);
     link.click();
